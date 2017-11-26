@@ -10,9 +10,9 @@ import org.slf4j.LoggerFactory;
  * @email: flying9001@gmail.com
  * @date: 2017/11/12
  */
-public class LoggerTest {
+public class TestLogback {
 
-    private static final Logger log = LoggerFactory.getLogger(LoggerTest.class);
+    private static final Logger log = LoggerFactory.getLogger(TestLogback.class);
 
     @Test
     public void logTest() {

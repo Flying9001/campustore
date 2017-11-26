@@ -102,7 +102,11 @@
         </encoder>
     </appender>
 
+    <!-- eg: com.ljq.test 类的日志输出 info 及以上级别的日志 -->
     <!--<logger name="com.ljq.test" level="info" />-->
+    <!-- eg: com.ljq.test1 类的日志不输出 -->
+    <!--<logger name="com.ljq.test1" additivity="false" />-->
+
 
     <!-- 根日志,所有日志appender都必须包含在root/logger中,否则不会起作用 -->
     <root level="debug">
