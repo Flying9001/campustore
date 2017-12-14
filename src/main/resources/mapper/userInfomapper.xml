@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="classpath:mapper.userInfomapper" >
+<mapper namespace="com.ljq.cs.dao.UserInfoDao" >
     <!-- 用户登录 -->
     <select id="signin" resultType="UserInfo">
         select info.id,info.nickname,info.account,info.phone,info.uname,info.passcode,info.registertime,info.ustatus,info.address,info.ifonline,
@@ -29,7 +29,7 @@
     </select>
 
     <!-- 用户注册 -->
-    <insert id="signup" >
+    <insert id="signup" parameterType="com.ljq.cs.entity.UserInfo" >
         insert into t_userInfo(nickname,account,phone,uname,passcode,registertime)
         values(#{nickname},#{account},#{phone},#{uname},#{passcode},#{registertime})
     </insert>

@@ -1,6 +1,8 @@
 package com.ljq.cs.dao;
 
+import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.UserInfo;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,34 +16,29 @@ public interface UserInfoDao {
 
 
     //	用户注册
-    public boolean signup( UserInfo userInfo);
-
-
-/*
+   boolean signup(  UserInfo userInfo);
     //	用户登录
-    public UserInfo signin(UserInfo userInfo);
+   UserInfo signin(UserInfo userInfo);
     //	注销用户
-    public boolean writeoff(UserInfo userInfo);
+   boolean writeoff(UserInfo userInfo);
     //	修改个人信息
-    public boolean updateInfo(UserInfo userInfo);
+   boolean updateInfo(UserInfo userInfo);
     //	查询所有用户
-    public List queryAllUser(Pagination page);
+   List queryAllUser(Pagination page);
     //	统计所有用户数量
-    public int countAllUser();
+   int countAllUser();
     //	统计在线人数
-    public int countOnline();
+   int countOnline();
     //	查询某个用户完整信息
-    public UserInfo queryOneInfo(UserInfo userInfo);
+   UserInfo queryOneInfo(UserInfo userInfo);
     //	搜索用户
-    public List searchUser(UserInfo userInfo,Pagination page);
+   List searchUser(UserInfo userInfo,Pagination page);
     //	判断用户是否在线
-    public boolean ifOnline(UserInfo userInfo);
+   boolean ifOnline(UserInfo userInfo);
     //	判断用户是否存在
-    public boolean ifExist(UserInfo userInfo);
+   boolean ifExist(UserInfo userInfo);
     //	判断账号是否可用
-    public boolean userStatus(UserInfo userInfo);
-*/
-
+   boolean userStatus(UserInfo userInfo);
 
 
 

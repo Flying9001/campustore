@@ -12,50 +12,28 @@ public class UserInfo implements Serializable{
 
     private static final long serialVersionUID = 296943748943950653L;
 
-//    id
-    private int id;
-//    昵称
-    private String nickname;
-//    帐号
-    private String account;
-//    手机号
-    private String phone;
-//    用户名
-    private String uname;
-//    密码
-    private String passcode;
-//    注册时间
-    private String registertime;
-//    用户帐号状态 1:正常 0: 异常
-    private int ustatus;
-//    积分
-    private int score;
-//    地址
-    private String address;
-//    在线状态 1:在线 0:离线
-    private int ifonline;
-//    性别
-    private String gender;
-//    年龄
-    private int age;
-//    学校
-    private String university;
-//    学院
-    private String college;
-//    班级
-    private String classes;
-//    学号
-    private String stuid;
-//    QQ号
-    private String qqnum;
-//    微信
-    private String weichat;
-//    邮箱
-    private String email;
-//    头像(这里保存的为头像路径)
-    private String headportrait;
-//    个性签名
-    private String tips;
+    private int id;  // id
+    private String nickname;  // 昵称
+    private String account;  // 帐号
+    private String phone;  // 手机号
+    private String uname;  // 用户名
+    private String passcode;  // 密码
+    private String registertime;  // 注册时间
+    private int ustatus;  // 用户帐号状态 1:正常 0: 异常
+    private int score;  // 积分
+    private String address;  // 地址
+    private int ifonline;  // 在线状态 1:在线 0:离线
+    private String gender;  // 性别
+    private int age;  // 年龄
+    private String university;  // 学校
+    private String college;  // 学院
+    private String classes;  // 班级
+    private String stuid;  // 学号
+    private String qqnum;  // QQ号
+    private String weichat;  // 微信
+    private String email;  // 邮箱
+    private String headportrait;  // 头像(这里保存的为头像路径)
+    private String tips;  // 个性签名
 
 
     public int getId() {

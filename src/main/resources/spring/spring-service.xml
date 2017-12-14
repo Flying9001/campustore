@@ -11,7 +11,7 @@
     http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!-- 自动扫描 -->
-    <context:component-scan base-package="com.ljq.cs.service" />
+    <context:component-scan base-package="com.ljq.cs" />
 
     <!-- 事物管理 -->
     <bean id="transactionManager"
