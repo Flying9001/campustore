@@ -33,13 +33,14 @@
     <mysql.version>6.0.6</mysql.version>
     <slf4j.version>1.7.25</slf4j.version>
     <slf4jLogback.version>1.2.3</slf4jLogback.version>
-    <jstl>1.2</jstl>
     <commons.dbcp>1.2.2</commons.dbcp>
     <commons.upload>1.3.1</commons.upload>
     <commons.io>2.4</commons.io>
     <commons.codec>1.9</commons.codec>
     <jackson>2.9.2</jackson>
     <junit.version>4.12</junit.version>
+    <jstl>1.2</jstl>
+    <tomcat.servlet.api>9.0.2</tomcat.servlet.api>
   </properties>
 
   <!-- 依赖 jar -->
@@ -128,12 +129,18 @@
       <version>${commons.dbcp}</version>
     </dependency>
 
-    <!-- JSTL标签类 -->
+    <!-- WEB 标签类 -->
     <dependency>
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>${jstl}</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat</groupId>
+      <artifactId>tomcat-servlet-api</artifactId>
+      <version>${tomcat.servlet.api}</version>
+    </dependency>
+
 
     <!-- log -->
     <dependency>

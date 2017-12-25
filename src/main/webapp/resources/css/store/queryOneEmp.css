@@ -1,0 +1,84 @@
+@CHARSET "UTF-8";
+/*主体-业务*/
+.body{ position: relative; width: 100%; height: 800px; margin-top: 45px; }
+.body-con{ 
+	position: relative;
+	width: 1200px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 2px solid gray;
+	border-right: 2px solid gray;
+}
+/*员工-tips*/
+.emp-tips{
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	top: 0;
+	text-align: center;
+	line-height: 60px;
+	letter-spacing: 1em;
+	font-size: 22px;
+	font-weight: 600;
+	color: #4169e1;
+	background: #F1F1F1;
+}
+/*员工详细信息*/
+.emp-info{
+	position: absolute;
+	width: 100%;
+	height: 735px;
+	top: 65px;
+}
+.emp-info table{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+.emp-info table tr{
+	height: 60px;
+}
+.emp-info table tr td{
+	line-height: 100%;
+	border-bottom: 1px solid gray;
+}
+.emp-info input{
+	width: 450px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 18px;
+	text-align: left;
+	text-indent: 2em;
+	text-overflow: ellipsis;
+	background: #F7F7F7;
+	color: #4169e1;
+	border: 1px solid #A5A5A5;
+}
+.emp-info button{
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	background: #00fa9a;
+	border: none;
+	color: #fff;
+}
+.emp-info button:HOVER{
+	cursor: pointer;
+}
+#store-emp-updated{
+	display: none;
+}
+
+
+
+
+
+
+
+
+

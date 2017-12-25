@@ -1,0 +1,156 @@
+@CHARSET "UTF-8";
+/*头部导航*/
+.head{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	left: auto;
+	right: auto;
+	top: 0;
+	z-index:10;
+	background: #ff00ff;
+}
+.head-con{
+	position: relative;
+	width: 1200px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.head-con>ul{
+	position: absolute;
+	left: 20px;
+}
+.head-con>ul li{
+	width: 200px;
+	height: 100%;
+	float: left;
+	margin-left: 15px;
+}
+.head-con>ul li a{
+	line-height: 50px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	display: block;
+	color: #fff;
+}
+.head-con>ul li a:HOVER{
+	background: #F10180;
+}
+/*主体部分*/
+.confirmorder-body{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+}
+.body-con{
+	position: relative;
+	width: 1200px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tag-tips{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	font-size: 32px;
+	color: fuchsia;
+	border-bottom: 3px solid fuchsia;
+}
+.tag-order{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	top: 100px;
+	font-size: 32px;
+	color: fuchsia;
+	border-bottom: 3px solid fuchsia;
+}
+.order-details{
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	top: 160px;
+}
+.order-details table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.order-details table tr{
+	height: 100px;
+	text-align: center;
+}
+.order-details table tr td{
+	border: 1px solid gray;	
+}
+.order-details .order-remarks{
+	width: 290px;
+	height: 90px;
+	font-size: 18px;
+	resize: none;
+}
+.order-details .order-header{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+	text-align: center;
+	background: #F5F5F5;
+	color: #3F3F3F;
+}
+.order-details .order-footer{
+	height: 60px;
+}
+.order-submit{
+	width: 150px;
+	height: 30px;
+	border: none;	
+	background: fuchsia;
+	font-size: 20px;
+	color: #fff;
+}
+.order-footer button:HOVER {
+	cursor: pointer;
+	background: #F10180;
+}
+/*订单-支付部分*/
+#order-payment{
+	width: 290px;
+	height: 50px;
+	font-size: 18px;
+	background: #F5F5F5;
+	border: 2px solid #ff6347;
+}
+.order-details .order-payment-img{
+	height: 350px;
+	display: none;
+}
+.order-payment-img img{
+	height: 300px;
+	width: 300px;
+}
+.order-details .msg-payment{
+	height: 50px;
+	display: none;
+}
+.msg-payment-tips{
+	width: 100%;
+	height: 100%;
+	line-height: 50px;
+	font-size:20px;
+	font-weight: bold;
+	color:#ff0000;
+	text-align: center;
+}
+
+
+
+
+
+
+

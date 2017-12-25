@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+/*主体-业务*/
+.body{ position: relative; width: 100%; height: 800px; margin-top: 45px; }
+.body-con{ 
+	position: relative;
+	width: 1200px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-left: 2px solid gray;
+	border-right: 2px solid gray;
+}
+/*商品-tips*/
+.com-tips{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	top: 0;
+	text-align: center;
+	line-height: 40px;
+	letter-spacing: 1em;
+	font-size: 20px;
+	font-weight: 600;
+	color: #4169e1;
+	background: #F1F1F1;
+}
+/*商品-pic*/
+.com-pic{
+	position: absolute;
+	width: 100%;
+	height: 280px;
+	top: 45px;
+	
+}
+.com-pic>ul>li{
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin: 15px 10px 0 15px; 
+}
+.com-pic>ul>li img{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ECE4DD;
+}
+.com-pic>ul>li div{
+	width: 100%;
+	height: 100%;
+	line-height: 250px;
+	text-align: center;
+	font-size: 25px; 
+	color: #c0c0c0;
+	border: 1px solid #ECE4DD;
+	display: block;
+}
+.com-pic>ul>li div:HOVER{
+	color: #ff00ff;
+	cursor: pointer;
+}
+/*商品-详细信息*/
+.com-info{
+	position: absolute;
+	width: 100%;
+	height: 470px;
+	top: 330px;
+}
+.com-info table{
+	width: 100%;
+	border-collapse: collapse;
+}
+.com-info table tr{
+	height: 50px;
+}
+.com-info table tr td{
+	line-height: 100%;
+	text-indent: 1em;
+	font-size: 18px;
+	color: #464956;
+	text-overflow: ellipsis;
+	border-bottom: 1px solid gray;
+}
+.com-info input{
+	width: 310px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 18px;
+	text-align: left;
+	text-indent: 1em;
+	text-overflow: ellipsis;
+	background: #F7F7F7;
+	color: #464956;
+	border: 1px solid #4169e1;
+}
+.com-info button{
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 600;
+	background: #00fa9a;
+	border: none;
+	color: #fff;
+}
+.com-info button:HOVER{
+	cursor: pointer;
+}
+#store-com-updated{
+	display: none;
+}
+
+
