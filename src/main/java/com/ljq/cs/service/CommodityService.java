@@ -2,6 +2,7 @@ package com.ljq.cs.service;
 
 import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.Commodity;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @email: flying9001@gmail.com
  * @date: 2017/12/17
  */
+@Repository
 public interface CommodityService {
 
     //	添加商品

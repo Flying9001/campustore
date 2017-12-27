@@ -1,6 +1,7 @@
 package com.ljq.cs.dao;
 
 import com.ljq.cs.entity.Payment;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -10,6 +11,7 @@ import java.util.List;
  * @email: flying9001@gmail.com
  * @date: 2017/12/17
  */
+@Repository
 public interface PaymentDao {
 
     //	添加支付方式

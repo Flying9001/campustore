@@ -2,6 +2,7 @@ package com.ljq.cs.service;
 
 import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.UserInfo;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
  * @email: flying9001@gmail.com
  * @date: 2017/11/27
  */
+@Repository
 public interface UserInfoService {
 
 

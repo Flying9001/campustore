@@ -3,6 +3,7 @@ package com.ljq.cs.dao;
 import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.UserInfo;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import java.util.List;
  * @email: flying9001@gmail.com
  * @date: 2017/11/15
  */
+@Repository
 public interface UserInfoDao {
 
 
