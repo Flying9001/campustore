@@ -18,9 +18,6 @@
     -->
     <mvc:annotation-driven />
 
-    <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
-    <context:component-scan base-package="com.ljq.cs.controller" />
-
     <!-- 2.静态资源默认servlet配置
        (1)加入对静态资源的处理：js,gif,png
        (2)允许使用"/"做整体映射
@@ -30,13 +27,11 @@
     <!-- 3.配置jsp 显示ViewResolver -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
-        <property name="prefix" value="/WEB-INF/view/" />
+        <property name="prefix" value="/resources/view/" />
         <property name="suffix" value=".jsp" />
     </bean>
 
     <!-- 4.扫描web相关的bean -->
     <context:component-scan base-package="com.ljq.cs.web" />
-
-
 
 </beans>

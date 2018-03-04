@@ -41,6 +41,7 @@
     <junit.version>4.12</junit.version>
     <jstl>1.2</jstl>
     <tomcat.servlet.api>9.0.2</tomcat.servlet.api>
+    <jedis>2.9.0</jedis>
   </properties>
 
   <!-- 依赖 jar -->
@@ -54,7 +55,8 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- SpringMVC -->
+    <!-- Spring -->
+    <!-- Spring core -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-core</artifactId>
@@ -62,12 +64,18 @@
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-web</artifactId>
+      <artifactId>spring-beans</artifactId>
       <version>${spring.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-oxm</artifactId>
+      <artifactId>spring-context-support</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- Spring DAO  -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
       <version>${spring.version}</version>
     </dependency>
     <dependency>
@@ -75,9 +83,10 @@
       <artifactId>spring-tx</artifactId>
       <version>${spring.version}</version>
     </dependency>
+    <!-- Spring Web -->
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-jdbc</artifactId>
+      <artifactId>spring-web</artifactId>
       <version>${spring.version}</version>
     </dependency>
     <dependency>
@@ -87,14 +96,15 @@
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-aop</artifactId>
+      <artifactId>spring-oxm</artifactId>
       <version>${spring.version}</version>
     </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
-      <artifactId>spring-context-support</artifactId>
+      <artifactId>spring-aop</artifactId>
       <version>${spring.version}</version>
     </dependency>
+    <!-- Spring test-->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
@@ -113,6 +123,13 @@
       <groupId>org.mybatis</groupId>
       <artifactId>mybatis-spring</artifactId>
       <version>${mybatisSpring.version}</version>
+    </dependency>
+
+    <!-- Redis  -->
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>${jedis}</version>
     </dependency>
 
     <!-- Mysql  -->
@@ -140,7 +157,6 @@
       <artifactId>tomcat-servlet-api</artifactId>
       <version>${tomcat.servlet.api}</version>
     </dependency>
-
 
     <!-- log -->
     <dependency>

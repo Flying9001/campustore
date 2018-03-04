@@ -21,7 +21,7 @@
 	<div class="head">
 		<div class="head-nav">
 				<ul>
-					<li id="SIGNINFLAG" value="<s:property value="#session.SIGNIN_FLAG"/>"><a href="">首页</a></li>
+					<li id="SIGNINFLAG" ><a href="">首页</a></li>
 					<li class="head-mobile" ><a href="">手机版CampusStore</a></li>
 					<li id="nav-li-1"><a href="">个人中心 ></a></li>
 					<li id="nav-li-2"><a href="">登录/注册 ></a></li>
