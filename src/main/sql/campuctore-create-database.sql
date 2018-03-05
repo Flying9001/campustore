@@ -94,8 +94,14 @@ create table t_commodity(
 	proplace varchar(100) not null		-- 生产地
 	
 );
+-- 员工等级/权限表
+drop table if exists t_grade;
+create table t_grade(
+	id int auto_increment PRIMARY key not null,		-- id,主键
+	gname  varchar(20) not null		-- 等级名称
+);
 -- 员工信息表
-drop table if exists t_emplyee;
+drop table if exists t_employee;
 create table t_employee(
 	id int auto_increment PRIMARY key not null,		-- id,主键
 	sid int not null,		-- 店铺id,外键
@@ -110,12 +116,6 @@ create table t_employee(
 	address varchar(200) ,		-- 地址
 	sex varchar(2) ,		-- 性别
 	age int 		-- 年龄
-);
--- 员工等级/权限表
-drop table if exists t_grade;
-create table t_grade(
-	id int auto_increment PRIMARY key not null,		-- id,主键
-	gname  varchar(20) not null		-- 等级名称
 );
 -- 购物车
 drop table if exists t_shoppingcar;
@@ -149,6 +149,12 @@ create table t_payment(
 	id int auto_increment PRIMARY key not null,		-- id,主键
 	pay varchar(10) not null		-- 支付方式
 );
+-- 物流状态表
+drop table if exists t_logistisInfo;
+create table t_logistisInfo(
+	id int auto_increment PRIMARY key not null,		-- id,主键
+	lstatus varchar(10) not null		-- 物流状态
+);
 -- 物流信息表
 drop table if exists t_logistic;
 create table t_logistic(
@@ -156,12 +162,6 @@ create table t_logistic(
 	oid int not null,		-- 订单id,外键
 	lsid int not null,		-- 物流状态id,外键
 	eid int not null		-- 派送员工id,外键
-);
--- 物流状态表
-drop table if exists t_logistisInfo;
-create table t_logistisInfo(
-	id int auto_increment PRIMARY key not null,		-- id,主键
-	lstatus varchar(10) not null		-- 物流状态
 );
 -- 用户浏览与操作记录
 drop table if exists t_userlog;
