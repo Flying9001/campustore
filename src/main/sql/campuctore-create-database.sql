@@ -1,5 +1,12 @@
+/**
+ * database name: campustore
+ * character: utf8mb4 (emoji is supported)
+ * date: 2018-03-05
+ * 
+*/
+
 drop database if exists campustore;
-create database campustore;
+create database campustore DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci ;
 
 use campustore;
 
@@ -28,22 +35,23 @@ create table t_userInfo (
 	email varchar(100) ,		-- 邮箱	
 	headportrait varchar(1000),		-- 头像,这里保存的是路径
 	tips varchar(250) 		-- 签名
-	
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 积分表
 drop table if exists t_userScore;
 create table t_userScore (
 	id int auto_increment PRIMARY key not null,		-- id,主键
 	uid int not null,
 	score int not null default '1'		-- 积分	
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 商品大类
 drop table if exists t_category;
 create table t_category(
 	id int auto_increment PRIMARY key not null,		-- id,主键
 	cname varchar(50) not null		-- 大类别名称
 
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 -- 商品小类
 drop table if exists t_scategory;
 create table t_scategory(
@@ -51,7 +59,8 @@ create table t_scategory(
 	cid int not null,			-- 大类别编号
 	scname varchar(50) not null		-- 小类别名称
 
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 店铺信息表
 drop table if exists t_store;
 create table t_store(
@@ -70,8 +79,8 @@ create table t_store(
 	storetel varchar(20) not null , 		-- 店铺电话
 	registertime varchar(50) not null,		-- 店铺注册时间
 	tips varchar(250) 		-- 店铺说明
-	
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 商品信息表
 drop table if exists t_commodity;
 create table t_commodity(
@@ -92,14 +101,15 @@ create table t_commodity(
 	details varchar(500) not null,		-- 详情
 	brand varchar(200) not null,	-- 品牌
 	proplace varchar(100) not null		-- 生产地
-	
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 员工等级/权限表
 drop table if exists t_grade;
 create table t_grade(
 	id int auto_increment PRIMARY key not null,		-- id,主键
 	gname  varchar(20) not null		-- 等级名称
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 员工信息表
 drop table if exists t_employee;
 create table t_employee(
@@ -116,7 +126,8 @@ create table t_employee(
 	address varchar(200) ,		-- 地址
 	sex varchar(2) ,		-- 性别
 	age int 		-- 年龄
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 购物车
 drop table if exists t_shoppingcar;
 create table t_shoppingcar(
@@ -125,7 +136,8 @@ create table t_shoppingcar(
 	cid int not null,		-- 商品id
 	ccount int null,		-- 商品数量
 	totalamount double(9,3)		-- 总金额
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 订单
 drop table if exists t_order;
 create table t_order(
@@ -141,20 +153,22 @@ create table t_order(
 	remarks varchar(500),		-- 备注信息 
 	ostatus int not null default '1', -- 订单提交状态
 	sendtime	varchar(50) not null		-- 发货时间
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-);
 -- 支付方式
 drop table if exists t_payment;
 create table t_payment(
 	id int auto_increment PRIMARY key not null,		-- id,主键
 	pay varchar(10) not null		-- 支付方式
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 物流状态表
 drop table if exists t_logistisInfo;
 create table t_logistisInfo(
 	id int auto_increment PRIMARY key not null,		-- id,主键
 	lstatus varchar(10) not null		-- 物流状态
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 物流信息表
 drop table if exists t_logistic;
 create table t_logistic(
@@ -162,7 +176,8 @@ create table t_logistic(
 	oid int not null,		-- 订单id,外键
 	lsid int not null,		-- 物流状态id,外键
 	eid int not null		-- 派送员工id,外键
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 用户浏览与操作记录
 drop table if exists t_userlog;
 create table t_userlog(
@@ -173,15 +188,15 @@ create table t_userlog(
 	scid int not null ,		-- 商品小类id,外键
 	updatetime varchar(50) not null , 	-- 更新时间
 	operation varchar(200) not null			-- 操作说明
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-);
 -- 员工操作记录表
 drop table if exists t_emplog;
 create table t_emplog(
 	id int auto_increment PRIMARY key not null,		-- id,主键
 	eid int not null,			-- 员工id，外键
 	operation varchar(200) not null			-- 操作说明
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 -- 添加外键约束
