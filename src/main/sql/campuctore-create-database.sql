@@ -22,6 +22,7 @@ create table t_userInfo (
 	passcode varchar(200) not null,		-- 密码
 	registertime varchar(50) not null,		-- 注册时间
 	ustatus int not null default '1', 		-- 账号状态,是否可用
+	score int not null default '0',    -- 积分
 	address varchar(1000) , 	-- 详细地址,具体到寝室
 	ifonline int not null default '1', 		-- 在线状态
 	gender	varchar(2) ,		-- 性别
@@ -31,7 +32,7 @@ create table t_userInfo (
 	classes varchar(200)	,		-- 班级
 	stuid varchar(50) ,			-- 学号
 	qqnum	varchar(20) ,		-- QQ号
-	weichat varchar(50), 		-- 微信
+	wechat varchar(50), 		-- 微信
 	email varchar(100) ,		-- 邮箱	
 	headportrait varchar(1000),		-- 头像,这里保存的是路径
 	tips varchar(250) 		-- 签名

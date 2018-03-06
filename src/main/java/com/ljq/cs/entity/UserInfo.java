@@ -30,11 +30,10 @@ public class UserInfo implements Serializable{
     private String classes;  // 班级
     private String stuid;  // 学号
     private String qqnum;  // QQ号
-    private String weichat;  // 微信
+    private String wechat;  // 微信
     private String email;  // 邮箱
     private String headportrait;  // 头像(这里保存的为头像路径)
     private String tips;  // 个性签名
-
 
     public int getId() {
         return id;
@@ -180,12 +179,12 @@ public class UserInfo implements Serializable{
         this.qqnum = qqnum;
     }
 
-    public String getWeichat() {
-        return weichat;
+    public String getWechat() {
+        return wechat;
     }
 
-    public void setWeichat(String weichat) {
-        this.weichat = weichat;
+    public void setWechat(String wechat) {
+        this.wechat = wechat;
     }
 
     public String getEmail() {
@@ -212,7 +211,6 @@ public class UserInfo implements Serializable{
         this.tips = tips;
     }
 
-
     @Override
     public String toString() {
         return "UserInfo{" +
@@ -234,10 +232,12 @@ public class UserInfo implements Serializable{
                 ", classes='" + classes + '\'' +
                 ", stuid='" + stuid + '\'' +
                 ", qqnum='" + qqnum + '\'' +
-                ", weichat='" + weichat + '\'' +
+                ", wechat='" + wechat + '\'' +
                 ", email='" + email + '\'' +
                 ", headportrait='" + headportrait + '\'' +
                 ", tips='" + tips + '\'' +
                 '}';
     }
+
+
 }
