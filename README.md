@@ -1,4 +1,4 @@
-## CampusStore
+## CampuStore
 
 CampuStore is a campus O2O consumption platform,which based on SpringMVC,Mybatis and MySQL.  
     

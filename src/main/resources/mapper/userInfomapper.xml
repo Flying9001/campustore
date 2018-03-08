@@ -5,26 +5,28 @@
 <mapper namespace="com.ljq.cs.dao.UserInfoDao" >
     <!-- 用户登录 -->
     <select id="signin" resultType="UserInfo">
-        select info.id,info.nickname,info.account,info.phone,info.uname,info.passcode,info.registertime,info.ustatus,info.address,info.ifonline,
-        info.gender,info.age,info.university,info.college,info.classes,info.stuid,info.qqnum,info.weichat,info.email,info.headportrait,info.tips
+        select info.id,info.nickname,info.account,info.phone,info.uname,info.passcode,info.registertime,info.ustatus,
+            info.score,info.address,info.ifonline,info.gender,info.age,info.university,info.college,info.classes,
+            info.stuid,info.qqnum,info.wechat,info.email,info.headportrait,info.tips
         from t_userinfo info
         where account=#{account} and passcode=#{passcode}
     </select>
 
     <!-- 查询某一个用户信息 -->
     <select id="queryOneInfo" resultType="UserInfo">
-        select info.id,info.nickname,info.account,info.phone,info.uname,info.passcode,info.registertime,info.ustatus,info.address,info.ifonline,
-        info.gender,info.age,info.university,info.college,info.classes,info.stuid,info.qqnum,info.weichat,info.email,info.headportrait,info.tips
+        select info.id,info.nickname,info.account,info.phone,info.uname,info.passcode,info.registertime,info.ustatus,
+          info.score,info.address,info.ifonline,info.gender,info.age,info.university,info.college,info.classes,
+          info.stuid,info.qqnum,info.wechat,info.email,info.headportrait,info.tips
         from t_userinfo info
         where 1=1
         <if test="id != null and '' != id">
-            and info.id = #{id}
+            and info.id = #{userInfo.id}
         </if>
         <if test="account != null and '' != account">
-            and info.account = #{account}
+            and info.account = #{userInfo.account}
         </if>
         <if test="phone != null and '' != phone">
-            and info.phone = #{phone}
+            and info.phone = #{userInfo.phone}
         </if>
     </select>
 

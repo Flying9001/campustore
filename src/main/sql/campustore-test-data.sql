@@ -7,7 +7,7 @@ use campustore;
 -- ----------------------------
 -- Records of t_userinfo
 -- ----------------------------
-INSERT INTO `t_userinfo` VALUES ('1','魔术师','强老板No1','18666668888','徐闻强','afac@AVGd',now(),'1','大学路XXX号','1','男','24','复旦大学','金融学院','金融1班','FD1966686868','1511140821','dreamboy050','flying9001@gmail.com','','上海滩是我的');
+INSERT INTO `t_userinfo` VALUES ('1','魔术师','强老板No1','18666668888','徐闻强','afac@AVGd',now(),'1','0','大学路XXX号','1','男','24','复旦大学','金融学院','金融1班','FD1966686868','1511140821','dreamboy050','flying9001@gmail.com','','上海滩是我的');
 
 -- ----------------------------
 -- Records of t_category

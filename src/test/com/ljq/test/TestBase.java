@@ -15,11 +15,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration({"classpath:spring/spring-dao.xml","classpath:spring/spring-service.xml"})
 public class TestBase {
 
-   /* @Test
-    public void test(){
+//    @Test
+//    public void test(){
+//
+//        System.out.println("hahahaha");
+//    }
 
-        System.out.println("hahahaha");
-    }
-*/
-    
 }
