@@ -2,6 +2,7 @@ package com.ljq.cs.dao;
 
 import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.EmpLog;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -16,17 +17,17 @@ import java.util.List;
 public interface EmpLogDao {
 
     //	创建员工操作记录
-    boolean create(EmpLog log);
+    boolean create(@Param("log") EmpLog log);
     //	删除所有操作记录ByEmployee
-    boolean delByEmp(EmpLog log);
+    boolean delByEmp(@Param("log") EmpLog log);
     //	删除单条操作记录
-    boolean delOne(EmpLog log);
+    boolean delOne(@Param("log") EmpLog log);
     //	查询所有操作记录ByEmp
-    List queryByEmp(EmpLog log, Pagination page);
+    List queryByEmp(@Param("log") EmpLog log, @Param("page") Pagination page);
     //	查询单条操作记录
-    EmpLog queryOne(EmpLog log);
+    EmpLog queryOne(@Param("log") EmpLog log);
     //	统计所有操作记录ByEmp
-    int countByEmp(EmpLog log);
+    int countByEmp(@Param("log") EmpLog log);
 
 
 }

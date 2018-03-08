@@ -3,6 +3,7 @@ package com.ljq.cs.dao;
 import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.Employee;
 import com.ljq.cs.entity.Store;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -17,21 +18,21 @@ import java.util.List;
 public interface EmployeeDao {
 
     //	员工注册
-    boolean signup(Employee emp);
+    boolean signup(@Param("emp") Employee emp);
     //	员工登录
-    Employee signin(Employee emp);
+    Employee signin(@Param("emp") Employee emp);
     //	删除某一名员工
-    boolean delOne(Employee emp);
+    boolean delOne(@Param("emp") Employee emp);
     //	按条件批量删除员工
-    boolean delByCondition(Store store);
+    boolean delByCondition(@Param("store") Store store);
     //	修改员工信息
-    boolean update(Employee emp);
+    boolean update(@Param("emp") Employee emp);
     //	按条件批量查询员工信息
-    List queryByCondition(Employee emp, Pagination page);
+    List queryByCondition(@Param("emp") Employee emp, @Param("page") Pagination page);
     //	查询某一名员工
-    Employee queryOne(Employee emp);
+    Employee queryOne(@Param("emp") Employee emp);
     //	按条件统计员工数量
-    int countByCondition(Employee emp);
+    int countByCondition(@Param("emp") Employee emp);
     //	统计所有的员工
     int countAll();
 

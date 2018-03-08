@@ -15,6 +15,7 @@ public class Order implements Serializable {
     private int id;   //  id ,主键
     private int uid;   //  用户 id ,外键
     private int cid;   //  商品 id ,外键
+    private int stoid;  // 店铺id
     private int sid;   //  购物车 id ; 0: 表示该订单属于用户直接下单，并非来自购物车(默认)
     private int ccount;   //  商品数量
     private double totalamount;   //  总金额
@@ -49,6 +50,22 @@ public class Order implements Serializable {
 
     public void setCid(int cid) {
         this.cid = cid;
+    }
+
+    public int getStoid() {
+        return stoid;
+    }
+
+    public void setStoid(int stoid) {
+        this.stoid = stoid;
+    }
+
+    public int getSid() {
+        return sid;
+    }
+
+    public void setSid(int sid) {
+        this.sid = sid;
     }
 
     public int getCcount() {
@@ -107,20 +124,14 @@ public class Order implements Serializable {
         this.sendtime = sendtime;
     }
 
-    public int getSid() {
-        return sid;
-    }
-
-    public void setSid(int sid) {
-        this.sid = sid;
-    }
-
     @Override
     public String toString() {
         return "Order{" +
                 "id=" + id +
                 ", uid=" + uid +
                 ", cid=" + cid +
+                ", stoid=" + stoid +
+                ", sid=" + sid +
                 ", ccount=" + ccount +
                 ", totalamount=" + totalamount +
                 ", pid=" + pid +

@@ -2,6 +2,7 @@ package com.ljq.cs.dao;
 
 import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.UserLog;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -16,17 +17,17 @@ import java.util.List;
 public interface UserLogDao {
 
     //	创建用户操作记录
-    boolean createLog(UserLog log);
+    boolean createLog(@Param("log") UserLog log);
     //	删除所有操作记录ByUser
-    boolean delLogByUser(UserLog log);
+    boolean delLogByUser(@Param("log") UserLog log);
     //	删除单条操作记录
-    boolean delOneLog(UserLog log);
+    boolean delOneLog(@Param("log") UserLog log);
     //	查询所有操作记录ByUser
-    List queryLogByUser(UserLog log, Pagination page);
+    List queryLogByUser(@Param("log") UserLog log, @Param("page") Pagination page);
     //	查询单条操作记录
-    UserLog queryOneLog(UserLog log);
+    UserLog queryOneLog(@Param("log") UserLog log);
     //	统计所有操作记录ByUser
-    int countLogByUser(UserLog log);
+    int countLogByUser(@Param("log") UserLog log);
 
 
 
