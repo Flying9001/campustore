@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class TestUserInfoDao extends TestBase{
 
-    private static final Logger logback = LoggerFactory.getLogger(TestMyBatis.class);
+    private static final Logger logback = LoggerFactory.getLogger(TestUserInfoDao.class);
 
     @Autowired
     private UserInfoDao userInfoDao;

@@ -6,6 +6,7 @@ import com.ljq.cs.entity.UserInfo;
 import com.ljq.cs.service.UserInfoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -23,13 +24,13 @@ public class UserInfoServiceImpl implements UserInfoService {
 
     private static final Logger logger = LoggerFactory.getLogger(UserInfoServiceImpl.class);
 
-    @Resource
+    @Autowired
     private UserInfoDao userInfoDao;
 
 
     @Override
     public boolean signup(UserInfo userInfo) {
-        logger.debug("userInfo: " + userInfo);
+        logger.debug(userInfo.toString());
         return userInfoDao.signup(userInfo);
     }
 
