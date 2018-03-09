@@ -2,7 +2,6 @@ package com.ljq.cs.dao;
 
 import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.Logistic;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -17,19 +16,19 @@ import java.util.List;
 public interface LogisticDao {
 
     //	创建物流信息
-    boolean create( @Param("logistic") Logistic logistic);
+    boolean create( Logistic logistic);
     //	删除某一项物流信息
-    boolean delOne(@Param("logistic") Logistic logistic);
+    boolean delOne(Logistic logistic);
     //	更新物流信息
-    boolean update(@Param("logistic") Logistic logistic);
+    boolean update(Logistic logistic);
     //	查询物流信息ByOrder
-    Logistic queryByOrder(@Param("logistic") Logistic logistic);
+    Logistic queryByOrder(Logistic logistic);
     //	查询物流信息ByEmployee
-    List queryByEmp(@Param("logistic") Logistic logistic, @Param("page") Pagination page);
+    List queryByEmp(Logistic logistic, Pagination page);
     //	统计物流数量All
     int countAll();
     //	统计物流数量ByEmployee
-    int countByEmp(@Param("logistic") Logistic logistic);
+    int countByEmp(Logistic logistic);
 
 
 }

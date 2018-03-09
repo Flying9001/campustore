@@ -2,7 +2,6 @@ package com.ljq.cs.dao;
 
 import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.Store;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -17,23 +16,23 @@ import java.util.List;
 public interface StoreDao {
 
     //	注册店铺
-    boolean register(@Param("store") Store store);
+    boolean register(Store store);
     //	登录店铺
-    Store signin(@Param("store") Store store);
+    Store signin(Store store);
     //	删除某店铺
-    boolean delOne(@Param("store") Store store);
+    boolean delOne(Store store);
     //	修改店铺信息
-    boolean update(@Param("store") Store store);
+    boolean update(Store store);
     //	查询所有店铺
-    List queryAll(@Param("page") Pagination page);
+    List queryAll(Pagination page);
     //	查询某一家店铺信息
-    Store queryOne(@Param("store") Store store);
+    Store queryOne(Store store);
     //	搜索店铺
-    List search(@Param("store") Store store,@Param("page") Pagination page);
+    List search(Store store,Pagination page);
     //	判断店铺是否存在
-    boolean ifExist(@Param("store") Store store);
+    boolean ifExist(Store store);
     //	判断店铺状态
-    boolean stoStatus(@Param("store") Store store);
+    boolean stoStatus(Store store);
 
 
 }

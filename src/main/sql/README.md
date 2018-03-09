@@ -10,6 +10,8 @@
 - 2 sampustore-test-data.sql : 项目测试数据,也是直接运行该文件即可  
 
 **文件执行顺序: 先执行 `campustore-create-database.sql`,后执行 `campustore-test-data.sql`文件**  
+**`campustore-test-data.sql`文件只能执行一次**  
+    
     
     
     

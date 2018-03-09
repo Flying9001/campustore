@@ -1,7 +1,6 @@
 package com.ljq.cs.dao;
 
 import com.ljq.cs.entity.Grade;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -16,11 +15,11 @@ import java.util.List;
 public interface GradeDao {
 
     //	创建等级
-    boolean create(@Param("grade") Grade grade);
+    boolean create(Grade grade);
     //	删除等级
-    boolean del(@Param("grade") Grade grade);
+    boolean del(Grade grade);
     //	修改等级
-    boolean update(@Param("grade") Grade grade);
+    boolean update(Grade grade);
     //	查询所有的等级
     List queryAll();
     //	查询单条等级

@@ -17,9 +17,9 @@ import java.util.List;
 public interface UserScoreDao {
 
     //	添加积分
-    boolean addScore(@Param("score") UserScore score);
+    boolean addScore(UserScore score);
     //	修改积分
-    boolean updateScore(@Param("score") UserScore score);
+    boolean updateScore(UserScore score);
     //	查询个人积分
     List queryScoreByUser(@Param("page") Pagination page);
 

@@ -3,7 +3,6 @@ package com.ljq.cs.dao;
 import com.ljq.cs.dto.Pagination;
 import com.ljq.cs.entity.Category;
 import com.ljq.cs.entity.Scategory;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -18,20 +17,20 @@ import java.util.List;
 public interface ScategoryDao {
 
     //	添加小分类
-    boolean addOne(@Param("scategory") Scategory scategory);
+    boolean addOne(Scategory scategory);
     //	删除某一个小分类
-    boolean delOne(@Param("scategory") Scategory scategory);
+    boolean delOne(Scategory scategory);
     //	删除全部小分类
     boolean delAll();
     //	修改小分类信息
-    boolean update(@Param("scategory") Scategory scategory);
+    boolean update(Scategory scategory);
     //	查询全部小分类
-    List queryAll(@Param("page") Pagination page);
+    List queryAll(Pagination page);
     //	查询一个大类下的小分类
-    List queryByParent(@Param("category") Category category, @Param("page") Pagination page);
+    List queryByParent(Category category, Pagination page);
     //	查询某一个小分类
-    Category queryOne(@Param("scategory") Scategory scategory);
+    Category queryOne(Scategory scategory);
     //	搜索小分类
-    List search(@Param("scategory") Scategory scategory,@Param("page") Pagination page);
+    List search(Scategory scategory,Pagination page);
 
 }

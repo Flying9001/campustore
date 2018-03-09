@@ -18,18 +18,18 @@ public interface CategoryDao {
 
 
     //	添加分类
-    boolean addOne(@Param("category") Category category);
+    boolean addOne(Category category);
     //	删除某一个分类
-    boolean delOne(@Param("category") Category category);
+    boolean delOne(Category category);
     //	删除全部分类
     boolean delAll();
     //	修改分类信息
-    boolean update(@Param("category") Category category);
+    boolean update(Category category);
     //	查询全部分类
-    List queryAll(@Param("page") Pagination page);
+    List queryAll(Pagination page);
     //	查询某一个分类
-    Category queryOne(@Param("category") Category category);
+    Category queryOne(Category category);
     //	搜索分类
-    List search(@Param("category") Category category,@Param("page") Pagination page);
+    List search(Category category,Pagination page);
 
 }
