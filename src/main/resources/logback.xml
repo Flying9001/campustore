@@ -97,6 +97,10 @@
     <!--<logger name="com.ljq.test" level="info" />-->
     <!-- eg: com.ljq.test1 类的日志不输出 -->
     <!--<logger name="com.ljq.test1" additivity="false" />-->
+    <logger name="org.apache.ibatis.io" level="info" />
+    <logger name="org.mybatis.spring" level="info" />
+
+
 
 
     <!-- 根日志,所有日志appender都必须包含在root/logger中,否则不会起作用 -->

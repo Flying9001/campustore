@@ -23,10 +23,10 @@
             and info.id = #{id}
         </if>
         <if test="account != null and '' != account">
-            and info.account = #{userInfo.account}
+            and info.account = #{account}
         </if>
         <if test="phone != null and '' != phone">
-            and info.phone = #{userInfo.phone}
+            and info.phone = #{phone}
         </if>
     </select>
 
