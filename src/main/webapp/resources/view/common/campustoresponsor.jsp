@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%  String path = request.getContextPath();
-	String basePath = request.getScheme() + "://" + request.getServerName() + ":" +
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 		request.getServerPort() + path + "/";	
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -9,21 +9,43 @@
 <head>
 <base href="<%=basePath%>"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" type="text/css" charset="UTF-8" href="resources/css/jquery.alertable.css">
-<link rel="stylesheet" type="text/css" charset="UTF-8" href="resources/css/footer.css">
+<title>赞助-CampuStore</title>
+<link rel="stylesheet" type="text/css" href="resources/css/commonmodel.css"/>
+<link rel="stylesheet" type="text/css" href="resources/css/footer.css"/>
 </head>
 <body>
-	
+	<div class="head">
+		<div class="head-con">
+			<div class="head-logo">
+					<a href="resources/view/homepage.jsp"><img alt="CampuStore Logo" src="resources/img/cs-logo.jpg"></a>
+			</div>
+			<div class="head-text">
+				赞助CampuStore
+			</div>
+		</div>
+	</div>
+	<div class="body">
+		<div class="body-con">
+			<p>
+				CampuStore整个项目由大学生创业者开发完成，他们是一群追求梦想的孩子。
+			</p>
+			<br>
+			<p>
+				您的赞助将成为CampuStore翱翔天空的翅膀！
+			</p>
+			<br>
+			<p>
+				支付宝/微信：186XXXXXXXX
+			</p>
+			<br>
+			<p>
+				Thank you !
+			</p>
+			
+		</div>
+	</div>
 
-
-
-	<h2>前端主页</h2>
-	<h2><%=basePath %></h2>
-
-		
-
-	<%--网页底部 --%>	
+	<%--网页底部 --%>
 	<div class="footer">
 		<div class="footer-con">
 			<div class="footer-nav">
@@ -62,9 +84,8 @@
 			</div>
 		</div>
 	</div>
-
-	<script type="text/javascript" src="resources/js/jquery-1.11.3.js"></script>
-	<script type="text/javascript" src="resources/js/jquery.alertable.js"></script>
-	
+		
+		
 </body>
+
 </html>

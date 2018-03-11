@@ -9,9 +9,9 @@
 <head>
 <base href="<%=basePath%>"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
-<link href="css/footer.css" charset="UTF-8" rel="stylesheet">
-<link href="css/user/usersignin.css" charset="UTF-8" rel="stylesheet">
+<script type="text/javascript" src="resources/js/jquery-1.11.3.js"></script>
+<link href="resources/css/footer.css" type="text/css" charset="UTF-8" rel="stylesheet">
+<link href="resources/css/user/usersignin.css" type="text/css" charset="UTF-8" rel="stylesheet">
 <title>登录-CampusStore</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
 		<div class="head-con">
 			<div class="head-nav">
 				<div class="head-logo">
-					<a href="homepage.jsp"><img alt="CampusStore Logo" src="image/cs-logo.jpg"></a>
+					<a href="resources/view/homepage.jsp"><img alt="CampusStore Logo" src="resources/img/cs-logo.jpg"></a>
 				</div>
 				<div class="head-text">欢迎登录 </div>
 			</div>
@@ -28,7 +28,7 @@
 	<form action="user/signin" method="post" >
 	<div class="signin-body">
 			<div class="body-background">
-				<img alt="background" src="image/bg-usersignin.jpg">
+				<img alt="background" src="resources/img/bg-usersignin.jpg">
 			</div>
 		<div class="body-surface">
 			<div class="body-con">
@@ -39,7 +39,7 @@
 					</ul>
 				</div>
 				<div class="body-input-0">
-					<a href="view/common/campusstoremobile.jsp"><img alt="手机登录二维码" title="点击下载手机版CampusStore" src="image/usersignin-mobile.jpg"></a>
+					<a href="resources/view/common/campusstoremobile.jsp"><img alt="手机登录二维码" title="点击下载手机版CampuStore" src="resources/img/usersignin-mobile.jpg"></a>
 				</div>
 				<div class="body-input-1">
 					<ul>
@@ -63,7 +63,7 @@
 					<div class="message" id="message"></div>
 				</div>
 				<div class="body-signup">
-					没有账号？<a href="view/user/usersignup.jsp">立即注册</a>
+					没有账号？<a href="resources/view/user/usersignup.jsp">立即注册</a>
 				</div>				
 			</div>
 		</div>
@@ -109,5 +109,5 @@
 		</div>
 	</div>
 </body>
-<script charset="utf-8" type="text/javascript" src="js/user/usersignin.js"></script>
+<script charset="utf-8" type="text/javascript" src="resources/js/user/usersignin.js"></script>
 </html>

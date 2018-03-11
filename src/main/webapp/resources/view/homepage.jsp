@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css" href="resources/css/header.css">
 <link rel="stylesheet" type="text/css" href="resources/css/footer.css">
 <link rel="stylesheet" type="text/css" href="resources/css/homepage.css">
-<title>CampusStore</title>
+<title>CampuStore</title>
 </head>
 <body>
 	<%--导航栏 --%>
@@ -22,7 +22,7 @@
 		<div class="head-nav">
 				<ul>
 					<li id="SIGNINFLAG" ><a href="">首页</a></li>
-					<li class="head-mobile" ><a href="">手机版CampusStore</a></li>
+					<li class="head-mobile" ><a href="">手机版CampuStore</a></li>
 					<li id="nav-li-1"><a href="">个人中心 ></a></li>
 					<li id="nav-li-2"><a href="">登录/注册 ></a></li>
 					<li id="nav-li-3"><a href="">关于我们 ></a></li>
@@ -42,7 +42,7 @@
 				</div>
 				<div id="nav-box-3" class="hidden-nav hidden-nav-about">
 					<ul>
-						<li><a href="">关于CampusStore</a></li>
+						<li><a href="">关于CampuStore</a></li>
 						<li><a href="">联系我们</a></li>
 					</ul>
 				</div>
@@ -50,7 +50,7 @@
 	</div>
 	<%-- 滚动导航栏 --%>
 	<div class="scrolltop">
-			<a href="homepage.jsp"><img alt="Campusstore" src="resources/img/cs-scrolltop.jpg"></a>
+			<a href="resuources/view/homepage.jsp"><img alt="CampuStore" src="resources/img/cs-scrolltop.jpg"></a>
 			<form id="scroll-form" action="" method="get" >
 				<div class="scrolltop-input">
 					<input type="text" id="scrolltop-input"/>
@@ -91,7 +91,7 @@
 	<div class="body-search">
 		<div class="body-search-con">
 			<div class="body-home-pic">
-				<a id="body-home-logo" href="homepage.jsp"> </a>
+				<a id="body-home-logo" href="resources/view/homepage.jsp"> </a>
 			</div>
 			<form id="homepage-form" action="" method="get" >
 				<div class="body-search-input">
@@ -102,7 +102,7 @@
 				</div>
 			</form>
 			<div class="body-search-qrcode">
-				<a href="resources/view/common/campusstoremobile.jsp">手机版<img alt="手机版CampusStore" src="resources/img/qrcode-w.jpg"></a>
+				<a href="resources/view/common/campustoremobile.jsp">手机版<img alt="手机版CampuStore" src="resources/img/qrcode-w.jpg"></a>
 			</div>
 			<div class="body-qrcode-close">×</div>
 		</div>
@@ -111,7 +111,7 @@
 	<div class="body-nav">
 		<div class="body-nav-item">
 			<ul>
-				<li ><a class="body-nav-home" id="body-nav-home" href="homepage.jsp">首页</a></li>
+				<li ><a class="body-nav-home" id="body-nav-home" href="resources/view/homepage.jsp">首页</a></li>
 				<li><a href="javascript:void(0)">休闲食品</a></li>
 				<li><a href="javascript:void(0)">饮料</a></li>
 				<li><a href="javascript:void(0)">奶制品</a></li>
@@ -175,12 +175,12 @@
 				</div>
 				<div class="announcement-cont">
 					<ul>
-						<li><a href="resources/view/common/campusstorenews_publish.jsp" title="CampusStore的上线发布会">CampusStore的上线发布会</a></li>
-						<li><a href="resources/view/common/campusstorenews_ceo.jsp" title="强老板成为CampusStore的CEO">强老板成为CampusStore的CEO</a></li>
-						<li><a href="resources/view/common/campusstorenews_firstuniversity.jsp" title="湖北文理学院成为第一个CampusStore的试点高校">
-							湖北文理学院成为第一个CampusStore的试点高校</a></li>
-						<li><a href="resources/view/common/campusstoreintroduction.jsp" title="CampusStore新手指南">CampusStore新手指南</a></li>
-						<li><a href="resources/view/common/campusstoreinfo.jsp" title="关于CampusStore">关于CampusStore</a></li>
+						<li><a href="resources/view/common/campustorenews_publish.jsp" title="CampuStore的上线发布会">CampuStore的上线发布会</a></li>
+						<li><a href="resources/view/common/campustorenews_ceo.jsp" title="强老板成为CampuStore的CEO">强老板成为CampuStore的CEO</a></li>
+						<li><a href="resources/view/common/campustorenews_firstuniversity.jsp" title="湖北文理学院成为第一个CampuStore的试点高校">
+							湖北文理学院成为第一个CampuStore的试点高校</a></li>
+						<li><a href="resources/view/common/campustoreintroduction.jsp" title="CampuStore新手指南">CampuStore新手指南</a></li>
+						<li><a href="resources/view/common/campustoreinfo.jsp" title="关于CampuStore">关于CampuStore</a></li>
 					</ul>
 				</div>
 			</div>
@@ -295,47 +295,49 @@
 			</li>
 		</ul>
 	</div>
-	
-	<%--网页底部 --%>	
+
+	<%--网页底部 --%>
 	<div class="footer">
 		<div class="footer-con">
 			<div class="footer-nav">
 				<ul>
 					<li>联系我们</li>
 					<li>商业合作</li>
-					<li>关于CampusStore</li>
+					<li>关于CampuStore</li>
 				</ul>
 			</div>
 			<div class="footer-contact">
 				<ul>
-					<li>邮箱：rede.lu.5945@gmail.com</li>
-					<li>电话:18772102285</li>
+					<li>邮箱：flying9001@gmail.com</li>
 				</ul>
 			</div>
 			<div class="footer-business">
 				<ul>
-					<li><a href="resources/view/common/campusstorejoinin.jsp">>加入CampusStore</a></li>
-					<li><a href="resources/view/common/campusstorefriends.jsp">>成为CampusStore的合作伙伴</a></li>
-					<li><a href="resources/view/common/campusstoresponsor.jsp">>赞助CampusStore</a></li>
-					<li><a href="resources/view/common/campusstorebusiness.jsp">>在CampusStore上投放广告</a></li>
+					<li><a href="resources/view/common/campustorejoinin.jsp">>加入CampuStore</a></li>
+					<li><a href="resources/view/common/campustorefriends.jsp">>成为CampuStore的合作伙伴</a></li>
+					<li><a href="resources/view/common/campustoresponsor.jsp">>赞助CampuStore</a></li>
+					<li><a href="resources/view/common/campustorebusiness.jsp">>在CampuStore上投放广告</a></li>
 				</ul>
 			</div>
 			<div class="footer-about">
 				<ul>
-					<li><a href="resources/view/common/campusstoreinfo.jsp">>CampusStore信息</a></li>
-					<li><a href="resources/view/common/campusstorenews.jsp">>CampusStore新闻</a></li>
-					<li><a href="resources/view/common/campusstoreintroduction.jsp">>CampusStore新手入门</a></li>
-					<li><a href="resources/view/common/campusstorerecruit.jsp">>CampusStore工作机会</a></li>
+					<li><a href="resources/view/common/campustoreinfo.jsp">>CampuStore信息</a></li>
+					<li><a href="resources/view/common/campustorenews.jsp">>CampuStore新闻</a></li>
+					<li><a href="resources/view/common/campustoreintroduction.jsp">>CampuStore新手入门</a></li>
+					<li><a href="resources/view/common/campustorerecruit.jsp">>CampuStore工作机会</a></li>
 				</ul>
 			</div>
 			<div class="footer-info">
 				<ul>
-					<li>Copyright © 2017 CampusStore 版权所有</li>
+					<li>Copyright © 2017 CampuStore 版权所有</li>
 					<li>强强科技  版权所有 粤ICP备170XXXXX号</li>
 				</ul>
 			</div>
 		</div>
 	</div>
+
+
+
 	<div class="float-backtop">
 		<a href="javascript:scroll(0,0)">返回顶部</a>	
 	</div>

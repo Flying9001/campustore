@@ -4,35 +4,30 @@
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 		request.getServerPort() + path + "/";	
 %>
-<%@taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <base href="<%=basePath%>"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>CEO-CampusStore</title>
-<link rel="stylesheet" type="text/css" href="css/commonmodel.css"/>
-<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+<title>手机版-CampusStore</title>
+<link rel="stylesheet" type="text/css" href="resources/css/commonmodel.css"/>
+<link rel="stylesheet" type="text/css" href="resources/css/footer.css"/>
 </head>
 <body>
 	<div class="head">
 		<div class="head-con">
 			<div class="head-logo">
-					<a href="homepage.jsp"><img alt="CampusStore Logo" src="image/cs-logo.jpg"></a>
+					<a href="resources/view/homepage.jsp"><img alt="CampuStore Logo" src="resources/img/cs-logo.jpg"></a>
 			</div>
 			<div class="head-text">
-				强老板成为CampusStore的CEO
+				CampuStore-手机版
 			</div>
 		</div>
 	</div>
 	<div class="body">
 		<div class="body-con">
-			<p>
-				强老板，大名：陆俊强,CampusStore的创始人、CEO。CampusStore项目由他全程设计、开发。
-				强老板是湖北文理学院 机械与汽车工程学院 机制1311班的一名学生，大学期间因为热爱编程，所以在计算机编程
-				方面研究比较多，CampusStore作为其毕业设计，耗时 6 个月完成。从项目设计到项目开发，均由其一人完成。如今
-				强老板担任 CampusStore 的 CEO 一职。希望他能带领 CampusStore 越走越远，越走越高！
-			</p>
+			<br><br><br><br>
+			<p>CampuStore移动版正在开发中，敬请期待!!!</p>
 		</div>
 	</div>
 	<%--网页尾部 --%>
@@ -75,8 +70,11 @@
 			</div>
 		</div>
 	</div>
+	
 		
 		
 </body>
+
+
 
 </html>

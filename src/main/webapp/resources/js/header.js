@@ -60,9 +60,9 @@ $(document).ready(function(){
 	/*导航栏URL赋值*/
 	$(function(){
 		var navUrls = $('.head-nav>ul>li a');
-		navUrls[0].href = "homepage.jsp";
-		navUrls[1].href = "resources/view/common/campusstoremobile.jsp";
-		navUrls[4].href = "resources/view/common/campusstoreinfo.jsp";
+		navUrls[0].href = "resources/view/homepage.jsp";
+		navUrls[1].href = "resources/view/common/campustoremobile.jsp";
+		navUrls[4].href = "resources/view/common/campustoreinfo.jsp";
 		
 		var ucenterUrls = $('#nav-box-1>ul>li a');
 		ucenterUrls[0].href = "resources/user/usercenter?page.pagenum=0&page.limitnum=8&userInfo.account=" + signinFlag;
@@ -70,12 +70,12 @@ $(document).ready(function(){
 		ucenterUrls[2].href = "resources/user/usercenter?page.pagenum=0&page.limitnum=8&userInfo.account=" + signinFlag;
 		
 		var signUrls = $('#nav-box-2>ul>li a');
-		signUrls[0].href = "resources/resources/view/user/usersignin.jsp"
+		signUrls[0].href = "resources/view/user/usersignin.jsp"
 		signUrls[1].href = "resources/view/user/usersignup.jsp";
 		
 		var infoUrls = $('#nav-box-3>ul>li a');
-		infoUrls[0].href = "resources/view/common/campusstoreinfo.jsp"
-		infoUrls[1].href = "resources/view/common/campusstoretouch.jsp";
+		infoUrls[0].href = "resources/view/common/campustoreinfo.jsp"
+		infoUrls[1].href = "resources/view/common/campustoretouch.jsp";
 	
 	});
 	

@@ -4,15 +4,14 @@
 	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 		request.getServerPort() + path + "/";	
 %>
-<%@taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <base href="<%=basePath%>"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
-<link href="css/footer.css" rel="stylesheet">
-<link href="css/user/usersignup.css" rel="stylesheet">
+<script type="text/javascript" src="resources/js/jquery-1.11.3.js"></script>
+<link href="resources/css/footer.css" type="text/css" rel="stylesheet">
+<link href="resources/css/user/usersignup.css" type="text/css" rel="stylesheet">
 <title>注册-CampusStore</title>
 </head>
 <body>
@@ -20,11 +19,11 @@
 	<div class="head">
 		<div class="head-con">
 			<div class="head-logo">
-				<a href="homepage.jsp"><img alt="CampusStore Logo" src="image/cs-logo.jpg"></a>
+				<a href="resources/view/homepage.jsp"><img alt="CampusStore Logo" src="resources/img/cs-logo.jpg"></a>
 			</div>
 			<div class="head-text">用户注册 </div>
 			<div class="head-signin">
-				已经是会员？<a href="view/user/usersignin.jsp">点击登录</a>
+				已经是会员？<a href="resources/view/user/usersignin.jsp">点击登录</a>
 			</div>
 			<div class="head-hr"></div>
 			<ul>
@@ -33,9 +32,9 @@
 				<li id="signup-3">③ 密码设置</li>
 				<li id="signup-4">④ 注册成功</li>
 			</ul>
-		</div>	
+		</div>
 	</div>
-	
+
 	<%--主体 --%>
 	<form action="user/signup" method="post" >
 	<div class="signup-body">
@@ -50,7 +49,7 @@
 							<input type="text" id="input-nickname" name="userInfo.nickname"/>
 						</td>
 					<tr height="30px">
-						<td colspan="3" align="center" class="input-msg" id="input-nickname-msg">					
+						<td colspan="3" align="center" class="input-msg" id="input-nickname-msg">
 					</tr>
 					<tr height="40px">
 						<td width="150px" align="right" >账号ID：</td>
@@ -59,7 +58,7 @@
 						</td>
 					</tr>
 					<tr height="30px">
-						<td colspan="3" align="center" class="input-msg" id="input-account-msg"></td>					
+						<td colspan="3" align="center" class="input-msg" id="input-account-msg"></td>
 					</tr>
 					<tr height="80px">
 						<td colspan="3" align="center">
@@ -79,7 +78,7 @@
 						</td>
 					</tr>
 					<tr height="30px">
-						<td colspan="3" align="center" class="input-msg" id="input-name-msg">					
+						<td colspan="3" align="center" class="input-msg" id="input-name-msg">
 					</tr>
 					<tr height="40px">
 						<td width="150px" align="right" >手机号：</td>
@@ -88,7 +87,7 @@
 						</td>
 					</tr>
 					<tr height="30px">
-						<td colspan="3" align="center" class="input-msg" id="input-phone-msg">					
+						<td colspan="3" align="center" class="input-msg" id="input-phone-msg">
 					</tr>
 					<tr height="40px">
 						<td align="right">验证码：</td>
@@ -97,12 +96,12 @@
 						</td>
 					</tr>
 					<tr height="30px">
-						<td colspan="3" align="center" class="input-msg" id="input-checkcode-msg">					
+						<td colspan="3" align="center" class="input-msg" id="input-checkcode-msg">
 					</tr>
 					<tr height="60px">
 						<td >&nbsp</td>
 						<td width="200px;" align="right" >
-							<input style="width: 200px; height: 40px;" 
+							<input style="width: 200px; height: 40px;"
 								type="text" id="checkcode" disabled="disabled" />
 						</td>
 						<td align="left" width="250px">
@@ -128,7 +127,7 @@
 							</td>
 					</tr>
 					<tr height="30px">
-						<td colspan="3" align="center" class="input-msg" id="input-passcode-msg"></td>					
+						<td colspan="3" align="center" class="input-msg" id="input-passcode-msg"></td>
 					</tr>
 					<tr height="30px">
 						<td width="150px" align="right" >密码评估：</td>
@@ -147,20 +146,20 @@
 							</td>
 					</tr>
 					<tr height="30px">
-						<td colspan="3" align="center" class="input-msg" id="check-passcode-msg"></td>					
+						<td colspan="3" align="center" class="input-msg" id="check-passcode-msg"></td>
 					</tr>
 					<tr height="100px">
 						<td colspan="3" align="center">
 							<button type="submit" id="signup-next3" style="width: 250px;">现在注册</button>
 						</td>
 					</tr>
-					
+
 				</table>
 			</div>
 		</div>
 	</div>
 	</form>
-	
+
 	<%--网页尾部 --%>
 	<div class="footer">
 		<div class="footer-con">
@@ -202,5 +201,5 @@
 		</div>
 	</div>
 </body>
-<script type="text/javascript" src="js/user/usersignup.js"></script>
+<script type="text/javascript" src="resources/js/user/usersignup.js"></script>
 </html>
