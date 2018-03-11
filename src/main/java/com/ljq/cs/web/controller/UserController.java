@@ -28,7 +28,6 @@ public class UserController {
     @RequestMapping(value = "queryOneInfo")
     private String queryOneInfo(UserInfo userInfo, Model model){
 
-
         if(userInfo == null){
             logback.debug("request userInfo param is null !");
             return "redirect: /homepage";
@@ -40,7 +39,7 @@ public class UserController {
         }
         logback.debug(userInfo.toString());
         model.addAttribute("userInfo",userInfo);
-        return "homepage";
+        return "testuserresult";
 
     }
 

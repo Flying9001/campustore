@@ -14,18 +14,35 @@
 <link rel="stylesheet" type="text/css" href="resources/css/footer.css">
 </head>
 <body>
-	<h2>查询用户信息测试</h2>
-	<h2><%=basePath %></h2>
+	
 
+	<h2>用户信息测试返回界面</h2>
+	<h2>当前路径: <%=basePath %></h2>
 
-	<form action="user/queryOneInfo" method="post"><br/>
-		<input  type="text" style="width: 200px; height: 30px; border: 2px solid #E6E6E6;" name="account"/><br>
-		<input type="text" style="width: 200px; height: 30px; border: 2px solid #E6E6E6;" name="id"/><br/>
-		<input type="submit" value="提交"/>
-	</form>
+	<ul>
+		<li>id为${userInfo.id}的用户信息</li>
+		<li>- - -</li>
+		<li>昵称: ${userInfo.nickname}</li>
+		<li>帐号: ${userInfo.account}</li>
+		<li>手机号: ${userInfo.phone}</li>
+		<li>姓名: ${userInfo.uname}</li>
+		<li>注册时间: ${userInfo.registertime}</li>
+		<li>帐号状态: ${userInfo.ustatus}</li>
+		<li>积分: ${userInfo.score}</li>
+		<li>地址: ${userInfo.address}</li>
+		<li>性别: ${userInfo.gender}</li>
+		<li>年龄: ${userInfo.age}</li>
+		<li>学校: ${userInfo.university}</li>
+		<li>学院: ${userInfo.college}</li>
+		<li>班级: ${userInfo.classes}</li>
+		<li>学号: ${userInfo.stuid}</li>
+		<li>QQ: ${userInfo.qqnum}</li>
+		<li>微信: ${userInfo.wechat}</li>
+		<li>邮箱: ${userInfo.email}</li>
+		<li>个性签名: ${userInfo.tips}</li>
+	</ul>
 
-
-
+		
 
 	<%--网页底部 --%>	
 	<div class="footer">
