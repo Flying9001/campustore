@@ -19,8 +19,8 @@
 
 
 	<form action="user/queryOneInfo" method="post"><br/>
-		<input  type="text" style="width: 200px; height: 30px; border: 2px solid #E6E6E6;" name="userInfo.account"/><br>
-		<input type="text" style="width: 200px; height: 30px; border: 2px solid #E6E6E6;" name="userInfo.id"/><br/>
+		<input  type="text" style="width: 200px; height: 30px; border: 2px solid #E6E6E6;" name="account"/><br>
+		<input type="text" style="width: 200px; height: 30px; border: 2px solid #E6E6E6;" name="id"/><br/>
 		<input type="submit" value="提交"/>
 	</form>
 
