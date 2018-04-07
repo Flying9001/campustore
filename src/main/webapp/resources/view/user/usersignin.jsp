@@ -44,11 +44,11 @@
 				<div class="body-input-1">
 					<ul>
 						<li>
-							<input type="text" id="input-account" name="userInfo.account"/>
+							<input type="text" id="input-account" name="account"/>
 							<div class="body-input-label" style="top:13px;">ID</div>
 						</li>
 						<li>
-							<input type="password" id="input-passcode" name="userInfo.passcode"/>
+							<input type="password" id="input-passcode" name="passcode"/>
 							<div class="body-input-label" style="top:83px;">Key</div>
 						</li>
 						<li style="padding-left: 65px;">验证码:
