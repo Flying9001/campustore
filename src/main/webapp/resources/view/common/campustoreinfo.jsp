@@ -41,7 +41,8 @@ CampuStore平台上下单，下单成功默认立即派送，在校园范围内�
 			</p>
 		</div>
 	</div>
-	<%--网页尾部 --%>
+
+	<%--网页底部 --%>
 	<div class="footer">
 		<div class="footer-con">
 			<div class="footer-nav">
@@ -53,8 +54,7 @@ CampuStore平台上下单，下单成功默认立即派送，在校园范围内�
 			</div>
 			<div class="footer-contact">
 				<ul>
-					<li>邮箱：rede.lu.5945@gmail.com</li>
-					<li>电话:18772102285</li>
+					<li>邮箱：flying9001@gmail.com</li>
 				</ul>
 			</div>
 			<div class="footer-business">

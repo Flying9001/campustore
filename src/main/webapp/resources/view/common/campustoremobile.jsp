@@ -30,41 +30,40 @@
 			<p>CampuStore移动版正在开发中，敬请期待!!!</p>
 		</div>
 	</div>
-	<%--网页尾部 --%>
+	<%--网页底部 --%>
 	<div class="footer">
 		<div class="footer-con">
 			<div class="footer-nav">
 				<ul>
 					<li>联系我们</li>
 					<li>商业合作</li>
-					<li>关于CampusStore</li>
+					<li>关于CampuStore</li>
 				</ul>
 			</div>
 			<div class="footer-contact">
 				<ul>
-					<li>邮箱：rede.lu.5945@gmail.com</li>
-					<li>电话:18772102285</li>
+					<li>邮箱：flying9001@gmail.com</li>
 				</ul>
 			</div>
 			<div class="footer-business">
 				<ul>
-					<li><a href="view/common/campusstorejoinin.jsp">>加入CampusStore</a></li>
-					<li><a href="view/common/campusstorefriends.jsp">>成为CampusStore的合作伙伴</a></li>
-					<li><a href="view/common/campusstoresponsor.jsp">>赞助CampusStore</a></li>
-					<li><a href="view/common/campusstorebusiness.jsp">>在CampusStore上投放广告</a></li>
+					<li><a href="resources/view/common/campustorejoinin.jsp">>加入CampuStore</a></li>
+					<li><a href="resources/view/common/campustorefriends.jsp">>成为CampuStore的合作伙伴</a></li>
+					<li><a href="resources/view/common/campustoresponsor.jsp">>赞助CampuStore</a></li>
+					<li><a href="resources/view/common/campustorebusiness.jsp">>在CampuStore上投放广告</a></li>
 				</ul>
 			</div>
 			<div class="footer-about">
 				<ul>
-					<li><a href="view/common/campusstoreinfo.jsp">>CampusStore信息</a></li>
-					<li><a href="view/common/campusstorenews.jsp">>CampusStore新闻</a></li>
-					<li><a href="view/common/campusstoreintroduction.jsp">>CampusStore新手入门</a></li>
-					<li><a href="view/common/campusstorerecruit.jsp">>CampusStore工作机会</a></li>
+					<li><a href="resources/view/common/campustoreinfo.jsp">>CampuStore信息</a></li>
+					<li><a href="resources/view/common/campustorenews.jsp">>CampuStore新闻</a></li>
+					<li><a href="resources/view/common/campustoreintroduction.jsp">>CampuStore新手入门</a></li>
+					<li><a href="resources/view/common/campustorerecruit.jsp">>CampuStore工作机会</a></li>
 				</ul>
 			</div>
 			<div class="footer-info">
 				<ul>
-					<li>Copyright © 2017 CampusStore 版权所有</li>
+					<li>Copyright © 2017 CampuStore 版权所有</li>
 					<li>强强科技  版权所有 粤ICP备170XXXXX号</li>
 				</ul>
 			</div>

@@ -13,7 +13,7 @@
     </select>
 
     <!-- 查询某一个用户信息 -->
-    <select id="queryOneInfo" resultType="UserInfo">
+    <select id="queryOneInfo"  resultType="UserInfo">
         select info.id,info.nickname,info.account,info.phone,info.uname,info.passcode,info.registertime,info.ustatus,
           info.score,info.address,info.ifonline,info.gender,info.age,info.university,info.college,info.classes,
           info.stuid,info.qqnum,info.wechat,info.email,info.headportrait,info.tips
@@ -31,7 +31,7 @@
     </select>
 
     <!-- 用户注册 -->
-    <insert id="signup" parameterType="com.ljq.cs.entity.UserInfo" >
+    <insert id="signup" >
         insert into t_userInfo(nickname,account,phone,uname,passcode,registertime)
         values(#{nickname},#{account},#{phone},#{uname},#{passcode},#{registertime})
     </insert>
