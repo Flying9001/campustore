@@ -76,14 +76,19 @@ $(document).ready(function(){
 	}
 	/*ajax成功与后台交互*/
 	function connectSuccess(data){
-		var obj = eval("("+data+")");
-		$.each(obj,function(key,value){
-			if("SIGNIN_FLAG" == key && null != value && "" != value ){
-				forwardToWebsite("homepage.jsp");
-			}else{
-				message.text("*登录失败，用户名或密码错误!").show();
-				createCode(checkcode);
-			}
+		console.log("Success ......");
+        // var obj = eval("("+data+")");
+        // console.log("obj: " + obj);
+
+        $.each(data,function(key,value){
+        	console.log("key: " + key + ", value: " + value);
+
+            // if("SIGNIN_FLAG" == key && null != value && "" != value ){
+			// 	forwardToWebsite("homepage.jsp");
+			// }else{
+			// 	message.text("*登录失败，用户名或密码错误!").show();
+			// 	createCode(checkcode);
+			// }
 		});			
 	}
 	/*页面跳转*/

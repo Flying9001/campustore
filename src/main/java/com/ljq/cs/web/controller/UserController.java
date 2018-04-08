@@ -55,7 +55,7 @@ public class UserController {
         }
         logback.debug(userInfo.toString());
 
-        return null;
+        return userInfo;
     }
 
 
