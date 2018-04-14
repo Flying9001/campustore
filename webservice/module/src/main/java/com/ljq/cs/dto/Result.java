@@ -1,7 +1,7 @@
 package com.ljq.cs.dto;
 
 /**
- * @description: json result class,封装 json 对象,多有返回结果都是用这一个
+ * @description: json result class,封装 json 对象,多种返回结果都是用这一个
  * @author: lujunqiang
  * @date: 2018/3/10
  */
