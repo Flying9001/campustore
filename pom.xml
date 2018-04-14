@@ -69,7 +69,6 @@
         </profile>
     </profiles>
 
-    <!-- jdk -->
     <build>
         <finalName>campustore</finalName>
         <pluginManagement>

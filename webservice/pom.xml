@@ -10,6 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>webservice</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>controller</module>
+        <module>service</module>
+        <module>dao</module>
+        <module>module</module>
+        <module>utils</module>
+    </modules>
 
     <!-- 依赖 jar -->
     <dependencies>
