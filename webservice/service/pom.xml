@@ -23,6 +23,16 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.ljq</groupId>
+            <artifactId>module</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ljq</groupId>
+            <artifactId>dao</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <scope>test</scope>
