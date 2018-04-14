@@ -1,4 +1,4 @@
-package com.ljq.entity;
+package com.ljq.cs.entity;
 
 import java.io.Serializable;
 
