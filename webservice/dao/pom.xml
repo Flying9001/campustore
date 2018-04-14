@@ -32,6 +32,12 @@
             <artifactId>module</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.ljq</groupId>
+            <artifactId>controller</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
