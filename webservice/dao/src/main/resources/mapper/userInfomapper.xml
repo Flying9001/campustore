@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljq.cs.dao.UserInfoDao" >
+    <!-- 用户登录 -->
+    <select id="signin" resultType="UserInfo">
+        select info.id,info.nickname,info.account,info.phone,info.uname,info.passcode,info.registertime,info.ustatus,
+            info.score,info.address,info.ifonline,info.gender,info.age,info.university,info.college,info.classes,
+            info.stuid,info.qqnum,info.wechat,info.email,info.headportrait,info.tips
+        from t_userinfo info
+        where account=#{account} and passcode=#{passcode}
+    </select>
+
+    <!-- 查询某一个用户信息 -->
+    <select id="queryOneInfo"  resultType="UserInfo">
+        select info.id,info.nickname,info.account,info.phone,info.uname,info.passcode,info.registertime,info.ustatus,
+          info.score,info.address,info.ifonline,info.gender,info.age,info.university,info.college,info.classes,
+          info.stuid,info.qqnum,info.wechat,info.email,info.headportrait,info.tips
+        from t_userinfo info
+        where 1=1
+        <if test="id != null and '' != id">
+            and info.id = #{id}
+        </if>
+        <if test="account != null and '' != account">
+            and info.account = #{account}
+        </if>
+        <if test="phone != null and '' != phone">
+            and info.phone = #{phone}
+        </if>
+    </select>
+
+    <!-- 用户注册 -->
+    <insert id="signup" >
+        insert into t_userInfo(nickname,account,phone,uname,passcode,registertime)
+        values(#{nickname},#{account},#{phone},#{uname},#{passcode},#{registertime})
+    </insert>
+
+    <!-- 查询所有用户 -->
+    <select id="queryAllUser" resultType="UserInfo" >
+        select * from t_userInfo
+    </select>
+    <!-- 更新用户信息 -->
+    <update id="update">
+        update t_userinfo set
+        <if test="nickname != null and '' != nickname">
+            nickname = #{nickname}
+        </if>
+        <if test="phone != null and '' != phone">
+            , phone = #{phone}
+        </if>
+        <if test="uname != null and '' != uname">
+            , uname = #{uname}
+        </if>
+        <if test="passcode != null and '' != passcode">
+            , passcode = #{passcode}
+        </if>
+        <if test="ustatus != null and ustatus != 0 ">
+            , ustatus = #{ustatus}
+        </if>
+        <if test="address != null and '' != address">
+            , address = #{address}
+        </if>
+        <if test="ifonline != null and 0 != ifonline">
+            , ifonline = #{ifonline}
+        </if>
+        <if test="gender != null and '' != gender">
+            , gender = #{gender}
+        </if>
+        <if test="age != null and 0 != age">
+            , age = #{age}
+        </if>
+        <if test="university != null and '' != university">
+            , university = #{university}
+        </if>
+        <if test="college != null and '' != college">
+            , college = #{college}
+        </if>
+        <if test="classes != null and '' != classes">
+            , classes = #{classes}
+        </if>
+        <if test="stuid != null and '' != stuid">
+            , stuid = #{stuid}
+        </if>
+        <if test="qqnum != null and '' != qqnum">
+            , qqnum = #{qqnum}
+        </if>
+        <if test="weichat != null and '' != weichat">
+            , weichat = #{weichat}
+        </if>
+        <if test="email != null and '' != email">
+            , email = #{email}
+        </if>
+        <if test="headportrait != null and '' != headportrait">
+            , headportrait = #{headportrait}
+        </if>
+        <if test="tips != null and '' != tips">
+            , tips = #{tips}
+        </if>
+        where id = #{id}
+    </update>
+
+
+
+</mapper>
